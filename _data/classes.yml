@@ -1,0 +1,348 @@
+- topic: An introduction to the course
+  abbrev: course-intro
+  summary: We begin to consider the core ideas of the course.
+  subjects:
+    - Course goals
+    - Course format
+    - Approaching algorithms.
+    - Problem: Getting from here to there
+    - Problem: Optimal soldering plans
+    - Problem: Scheduling overlapping tasks
+
+- topic: Shortest path
+  abbrev: shortest-path
+  summary: We continue our exploration of the shortest path problem from the prior class.
+  subjects:
+    - Formalizing the problem
+    - Selecting possible approaches
+    - Sample solutions
+    - Analyzing the sample solutions
+    - A common solution
+
+- topic: Asymptotic analysis
+  abbrev: asymptotic-analysis
+  summary: We begin to consider ways to analyze the running times of algorithms.
+  subjects:
+    - Review of complexity analysis from 301
+    - Additional characteristics of Big-Oh
+    - Other notations (theta, little-oh)
+    - Casual and careful loop counting
+
+- topic: Reflective activities
+  abbrev: reflective-activities
+  summary: We reflect on the learning goals of the first two days of class and ground our understanding in a variety of exercises.
+  subjects:
+    - Dijsktra's shortest-path algorithm
+    - Algorithm design principles
+    - Greedy algorithms
+    - Quick review of asymptotic/complexity analysis
+    - Additional characteristics of Big-Oh
+
+- topic: Divide-and-conquer algorithms and structures
+  abbrev: divide-and-conquer
+  summary: We explore one of the important algorithm design techniques, divide and conquer.  Divide and conquer algorithms and structures achieve some efficiency by splitting the input in half.
+  subjects:
+    - Divide and conquer, in theory
+    - Review of divide-and-conquer algorithms and structures
+    - Finding the median value in an array
+    - Exponentiation with integer exponents
+    - Analyzing divide-and-conquer algorithms
+
+- topic: Asymptotic analysis and recurrence relations
+  abbrev: proof-divide-and-conquer
+  summary: We explore ways to think about the running time of divide-and-conquer algorithms.
+  subjects:
+    - The median algorithm, revised
+    - Two generic divide-and-conquer algorithms
+    - Modeling the running time of the generic algorithms
+    - Estimating the running time
+    - Looking ahead: The master theorem
+
+- topic: The Master Theorem
+  abbrev: master-theorem
+  summary: We consider proofs related to recurrence relations, and therefore to divide-and-conquer algorithms.
+  subjects:
+    - Detour - Recursion vs. iteration
+    - Recursion trees, revisited
+    - Proving asymptotic bounds of recursive functions
+    - The master theorem
+
+- topic: Roles of data structures and abstract data types
+  abbrev: data-structures
+  summary: We begin to consider the ADTs and data strutures that underlie many of the algorithms we write.
+  subjects:
+    - Abstract data types
+    - Data structures
+    - The Dictionary ADT
+
+- topic: Hash Tables
+  abbrev: hash-tables
+  summary: We consider hash tables, one of the more popular implementations of the dictionary ADT.
+  subjects:
+    - Review of hash tables.
+    - Hash functions, revisited.
+    - Other uses of hash tables and hash functions.
+
+- topic: More on dictionaries
+  abbrev: dictionaries
+  summary: We consider some basic issues of the tree ADT / data structure.
+  subjects:
+    - Hash tables: semi-formal analysis
+    - Other ways to represent dictionaries
+    - Trees
+
+- topic: Binary search trees
+  abbrev: bst
+  summary: We continue trees in general and binary search trees in particular.
+  subjects:
+    - Trees, formalized
+    - Terminology
+    - Binary trees
+    - Traversing trees
+    - Binary search trees
+    - Building balanced BSTs.
+    - Balancing BSTs.
+
+- topic: Red-black trees 
+  abbrev: red-black-trees
+  summary: We start to consider red-black trees, one of the approaches for keeping search trees relatively balanced.
+  subjects:
+    - Red-black tree basics
+    - Red-black tree examples
+    - Insertion in red-black trees
+
+- topic: Red-black trees, continued
+  abbrev: red-black-trees-continued
+  summary: We continue our exploration of red-black trees.
+  subjects:
+    - Deletion in binary-search trees
+    - Deletion in red-black trees
+
+- topic: 2-3 trees
+  abbrev: two-three-trees
+  summary: We continue to explore balanced trees by considering another approach to balancing trees.
+  subjects:
+    - Review: red-black trees
+    - 2-3 trees
+    - Insertion in 2-3 trees
+    - Deletion in 2-3 trees
+
+- topic: Pause for breath
+  abbrev: pause-05
+  summary: We pause to catch up on balanced trees and other issues.
+  subjects:
+    - Insertion in 2-3 trees, revisited
+    - Deletion in 2-3 trees
+    - B-trees
+    - 2-3-4 trees vs. red-black trees
+
+- topic: Sorting
+  abbrev: sorting
+  summary: We begin our consideration of one of the most common algorithmic problems, that of putting a collection of values in order.
+  subjects:
+    - Deletion in 2-3 trees
+    - Common sorting algorithms
+    - Characteristics of sorting algorithms
+    - Detour - Thinking about algorithm design
+
+- topic: Lower bounds on sorting algorithms
+  abbrev: lower-bounds
+  summary: We consider lower bounds on comparison-based sorting algorithms.
+  subjects:
+    - Detour - Thinking about algorithm design
+    - Compare and swap algorithms
+    - Decision trees
+    - Estimating log(n!)
+    - Detour - Deletion in 2-3 trees
+
+- topic: O(n) sorting algorithms
+  abbrev: fast-sorting
+  summary: We consider some algorithms that achieve O(n) running time, often by limitin the input in certain ways.
+  subjects:
+    - A sorting exercise
+    - Other strategies for sorting
+    - Bucket sort
+    - Radix sort
+
+- topic: Radix sort
+  abbrev: radix-sort
+  summary: We continue our exploration of O(n) algorithms, focusing primarily on bucket sort and radix sort
+  subjects:
+    - Another sorting example
+    - Radix sort
+    - Analyzing radix sort
+    - Bucket sort, revisited
+    - Analyzing bucket sort
+
+- topic: Discussion of exam 1
+  abbrev: exam1
+  summary: We consider exam 1
+  subjects:
+    - Problem 1
+    - Problem 2
+    - Problem 3
+    - Problem 4
+    - Problem 5
+
+- topic: Tries
+  abbrev: tries
+  summary: We explore the trie data structure.
+  subjects:
+    - Review of dictionaries
+    - Costs of dictionary implementations
+    - Tries
+
+- topic: Pause for breah
+  abbrev: pause-07
+  summary: We wrap up a variety of topics
+
+- topic: Detour - Skip lists
+  abbrev: skip-lists
+  summary: We consider some details of skip lists.
+  subjects:
+    - Reading the algorithms literature
+    - Skip lists
+
+- topic: Program verification (1)
+  abbrev: verification-1
+  summary: We begin to explore why and how we we use formal techniques to verify our algorithms.
+  subjects:
+    - Goals for this unit
+    - Verifying imperative code
+    - Example - binary search
+
+- topic: Program verification (2)
+  abbrev: verification-2
+  summary: We consider the details of common verification mechanisms.
+  subjects:
+    - Example - binary search, revised
+    - Verifying recursive procedures
+    - Example - Efficient exponentiation with recursion
+
+- topic: Program verification (3)
+  abbrev: verification-3
+  summary: We continue our exploration of program verification.
+  subjects:
+    - Example - Efficient exponentiation with iteration
+
+- topic: Program verification (4)
+  abbrev: verification-4
+  summary: We conclude our exploration of program verification with a traditional example.
+  subjects:
+    - Loop invariants, revisited
+    - Example - Dutch national flag
+
+- topic: Shortest paths
+  abbrev: shortest-paths
+  summary: We start our exploration of graphs by considering algorithms for computing the shortest path between nodes in a graph.
+  subjects:
+    - The shortest-path problem.
+    - Dijkstra's shortest-path algorithm.
+    - Analyzing Dijkstra's shortest-path algorithm.
+    - All-pairs shortest-path algorithms
+
+- topic: Minimum spanning trees
+  abbrev: mst
+  summary: We consider an important class of graph algorithm, that of computing the minimum spanning tree of a graph.
+  subjects:
+    - Minimum spanning trees
+    - Examples
+    - Designing an MST algorithm
+
+- topic: Miniumum spanning trees, continued
+  abbrev: mst-continued
+  summary: We explore the details and proofs of correctness of some MST algorithms.
+  subjects:
+    - Prim's algorithm and Kruskal's algorithm
+    - Efficiency
+    - Proofs of correctness
+
+- topic: Implementing graphs
+  abbrev: graph-implementations
+  summary: We consider how we might implement/represent graphs in the computer.
+  subjects:
+    - MSTs, concluded
+    - Key graph operations
+    - Four implementations of graphs
+    - Associated costs
+
+- topic: Sets and union-find
+  abbrev: union-find
+  summary: We consider an algorithm and structure that are useful in a variety of situations.
+  subjects:
+    - A set ADT
+    - Data structure design, revisited
+    - The union-find structure
+    - Analyzing union find
+    - Improving union-find
+
+- topic: Network flows
+  abbrev: network-flows
+  summary: We explore netflork flow algorithms and their applications.
+  subjects:
+    - Looking back to graph algorithms
+    - Network flows
+    - Bipartite matching
+
+- topic: Dynamic programming (1)
+  abbrev: dynamic-programming-1
+  summary: We consider another important algorithm design technique.
+  subjects:
+    - A motivating problem
+    - The value of caching
+    - Dynamic programming, generalized
+
+- topic: Dynamic programming (2)
+  abbrev: dynamic-programming-2
+  summary: We continue our consideration of dynamic programming
+  subjects:
+    - The value of caching
+    - Dynamic programming, generalized
+    - The knapsack problem
+
+- topic: Discussion of exam 2
+  abbrev: exam2
+  summary: We consider common issues on exam 2
+  subjects:
+    - Revisiting the cost of the stamps problem
+    - The 0-1 knapsack problem, continued
+    - Issues with problem 2 (Tries)
+    - Issues with problem 3 (Loop invariants)
+
+- topic: Dynamic programming (3)
+  abbrev: dynamic-programming-3
+  summary: We conclude our initial exploration of dynamic programming by visiting a common dynamic programming algorithm, approximate string matching.
+  subjects:
+    - Review: Core ideas of dynamic programming
+    - The edit distance problem
+    - Formulating a solution
+    - Varying the solution
+
+- topic: Basics of string matching
+  abbrev: string-matching basics
+  summary: We consider some basic issues in string matching algorithms
+  subjects:
+    - Approximate substring matching
+    - Exact substring matching
+    - The brute-force approach
+    - The hash-code approach
+
+- topic: Improved string-matching algorithms
+  abbrev: string-matching-improved
+  summary: We continue to explore string-matching algorithms
+  subjects: 
+    - The hash-code approach
+    - Keeping track of look-ahead
+    - Building the table
+
+- topic: "Looking ahead: P vs. NP"
+  abbrev: p-vs-np
+
+- topic: Wrapup
+  abbrev: wrapup
+
+- topic: Evaluate and debrief
+  abbrev: debrief
+
+- topic: Final Examination
+  abbrev: final

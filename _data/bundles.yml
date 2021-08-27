@@ -1,0 +1,28 @@
+last-updated: 16 March 2021 (drop quizzes; reduce MP expectations)
+
+totals:
+  readings: 25
+  labs:     25
+  quizzes:  25
+  demos:     6
+  las:      28
+
+tiers:
+  - grade: C
+    readings:   18xS
+    labs:       18xS
+    quizzes:    17xS
+    demos:      3xR+, 2xM+, 1xE
+    las:        21xS
+  - grade: B
+    readings:   21xS
+    labs:       20xS
+    quizzes:    19xS
+    demos:      2xR+, 2xM+, 2xE
+    las:        24xS
+  - grade: A
+    readings:   23xS
+    labs:       22xS
+    quizzes:    21xS
+    demos:      1xR+, 2xM+, 3xE
+    las:        26xS
