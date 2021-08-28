@@ -203,7 +203,7 @@ I particularly encourage students with disabilities to meet with me and discuss 
 I will also make adjustments for students without documented disabilities.  However, I do recommend that you seek official accommodations.
 As part of the accommodations process, I recommend talking to our Coordinator for Student Disability Resources for guidance and further instructions:
 
-+ Jae Hirschman, Goodnow Hall, 3rd floor (x3089)
++ Jae Hirschman, Steiner Hall, 1st floor (x3089)
 
 You can find some additional details in [my statement on
 accommodations and adjustments](../handouts/accommodations).
@@ -267,12 +267,9 @@ These systems, inspired by adult learning theory, are designed to create a "low-
 
 + Mastery obtained via exploration, experimentation, and failure is encouraged and valued as highly as "getting it right" the first time.
 + Your final grade accurately reflects your mastery of the learning goals of the course.
-+ The expectations for grades should be easy to understand and easily trackable.
 
-Ideally, all of you should be able to meet all of the goals in a reasonable amount of time (see the note about time and workload above).
 To achieve high grades, some of you may find that you have to re-do some of the work in the class.
 Many of the components of the course have "no penalty" redos available.
-See the notes below for more details.
 
 ### Work
 
@@ -284,7 +281,7 @@ This semester, we will have multiple kinds of work.
     * Some proof
     * Some implementation
 * Exams
-* Potentially "short assessments" like those we are now using in CSC-301
+* Potentially "short assessments" like those we are now using in CSC-151
 * An essay or two
 
 ### Letter grades
