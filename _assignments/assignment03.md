@@ -92,19 +92,21 @@ to be linear in practice.  In your experiments, you should
 * Print out the data in a handy-dandy CSV format, using columns
   `size,min,max,average` or `size,k,min,max,average`.
 
-For this part of the assignment, you should turn in N files.
+For this part of the assignment, you should turn in seven files.
 
-* `kth-core.h`, a header file that declares the `kth(int k, char *V[])`
+* `kth-core.h`, a header file that declares the `kth(int k, char *V[], int n)`
   function.
 * `kth-core.c`, a file that defines the `kth` function.  If you choose 
   to implement `kth` recursively, you'll probably also define your 
-  recursive helper here.
+  recursive helper here.  If you write a separate `partition` function,
+  you'll also want to implement that here.
 * `kth-tests.c`, a file that runs a set of tests that help verify the
   correctness of your `kth` function.
 * `kth.c`, a file that defines the command-line interface for your `kth` 
   function.  (See above for the details.)
 * `kth-experiments.c`, a file that runs the suggested experiments and
   prints out the CSV.
+* `Makefile`, the makefile for the project.
 
 Optionally: You can try your solution at
 <https://www.hackerrank.com/challenges/find-the-median/problem>.
@@ -116,7 +118,8 @@ As you may recall, we developed a variant of the nearest-neighbor
 algorihm in class, one in which during the search for crossovers,
 we only look for elements on the right that are vertically near
 elements on the left, and elements on the left that are vertically
-near elements on the left.  It goes something like this.
+near elements on the left.  It goes something like this (I don't
+guarantee that it's correct).
 
 ```
 np(Pairs)
