@@ -26,6 +26,36 @@
   assigned:
     - page: /assignments/assignment05.html
 
-- date: 2021-09-30
+- date: 2021-10-07
   due:
     - page: /assignments/assignment05.html
+
+- date: 2021-10-14
+  due:
+    - page: /assignments/assignment06.html
+
+- date: 2021-10-28
+  due:
+    - page: /assignments/assignment07.html
+
+- date: 2021-11-04
+  due:
+    - page: /assignments/assignment08.html
+
+- date: 2021-11-11
+  due:
+    - page: /assignments/assignment09.html
+
+- date: 2021-11-18
+  due:
+    - page: /assignments/assignment10.html
+
+- date: 2021-12-02
+  due:
+    - page: /assignments/assignment11.html
+
+- date: 2021-12-09
+  due:
+    - page: /assignments/assignment12.html
+
+

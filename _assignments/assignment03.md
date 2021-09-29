@@ -65,7 +65,7 @@ Given _k_ and _V_, find the kth smallest element as follows.
 
 a\. Implement a C program, `kth`, that takes an integer (_k_) and a
 collection of strings (_V_) as command-line parameters and prints
-out the kth-largest element of _V_.  You must do the partitioning
+out the kth-smallest element of _V_.  You must do the partitioning
 _in place_ in an array, and you may only allocate a new array once.
 You may not allocate any new strings.
 (You should be able to avoid allocating any new arrays.)
@@ -92,7 +92,7 @@ to be linear in practice.  In your experiments, you should
 * Print out the data in a handy-dandy CSV format, using columns
   `size,min,max,average` or `size,k,min,max,average`.
 
-For this part of the assignment, you should turn in seven files.
+For this part of the assignment, you should turn in eight files, three of which are provided (but which you can modify).
 
 * `kth-core.h`, a header file that declares the `kth(int k, char *V[], int n)`
   function.
@@ -100,8 +100,13 @@ For this part of the assignment, you should turn in seven files.
   to implement `kth` recursively, you'll probably also define your 
   recursive helper here.  If you write a separate `partition` function,
   you'll also want to implement that here.
+* `strutils.h`, a header file defining some string utilities. _This file was
+  provided on Teams, but you may wish to modify it._
+* `strutils.h`, a code file defining some string utilities. _This file was
+  provided on Teams, but you may wish to modify it._
 * `kth-tests.c`, a file that runs a set of tests that help verify the
-  correctness of your `kth` function.
+  correctness of your `kth` function.  _This file was provided on Teams, 
+  but you may wish to modify it._
 * `kth.c`, a file that defines the command-line interface for your `kth` 
   function.  (See above for the details.)
 * `kth-experiments.c`, a file that runs the suggested experiments and
@@ -119,7 +124,7 @@ algorihm in class, one in which during the search for crossovers,
 we only look for elements on the right that are vertically near
 elements on the left, and elements on the left that are vertically
 near elements on the left.  It goes something like this (I don't
-guarantee that it's correct).
+guarantee that it's completely correct).
 
 ```
 np(Pairs)
@@ -167,12 +172,13 @@ by y coordinate.
   Return the pair that corresponds to best.
 ```
 
-a. Implement the nearest neighbors algorithm in Racket.  You will
+Implement the nearest neighbors algorithm in Racket.  You will
 represent each point as a pair (cons cell) and all of the lists of
 points as, well, lists of points.  The signature of your method
-should be `(nn points)`.
+should be `(nn points)`.  You may assume that no two points have
+the same x coordinate.
 
-b. Instrument your code to count how many points on the "other side"
+**Optional**: Instrument your code to count how many points on the "other side"
 have a y coordinate between p.y and p.y+delta and to keep track of
 how many times each count occurs.  You'll store that information
 in a global vector, `candidates`.  That is, `(vector-ref candidates
