@@ -1,0 +1,31 @@
+- date: 2021-09-01
+  assigned:
+    - page: /assignments/assignment02.html
+
+- date: 2021-09-08
+  assigned:
+    - page: /assignments/assignment03.html
+
+- date: 2021-09-09
+  due:
+    - page: /assignments/assignment02.html
+
+- date: 2021-09-16
+  due:
+    - page: /assignments/assignment03.html
+
+- date: 2021-09-17
+  assigned:
+    - page: /assignments/assignment04.html
+
+- date: 2021-09-23
+  due:
+    - page: /assignments/assignment04.html
+
+- date: 2021-09-24
+  assigned:
+    - page: /assignments/assignment05.html
+
+- date: 2021-09-30
+  due:
+    - page: /assignments/assignment05.html

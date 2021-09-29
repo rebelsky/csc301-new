@@ -4,39 +4,37 @@
   subjects:
     - Course goals
     - Course format
-    - Approaching algorithms.
-    - Problem: Getting from here to there
-    - Problem: Optimal soldering plans
-    - Problem: Scheduling overlapping tasks
+  notes: ../eboards/eboard01
 
-- topic: Shortest path
-  abbrev: shortest-path
-  summary: We continue our exploration of the shortest path problem from the prior class.
+- topic: An introduction to the course, continued
+  abbrev: course-intro-continued
+  summary: We continue our introduction to the course.
   subjects:
-    - Formalizing the problem
-    - Selecting possible approaches
-    - Sample solutions
-    - Analyzing the sample solutions
-    - A common solution
+    - Approaching algorithms
+    - Testing priority queues
+    - Heaps, continued
+    - "Problem: Getting from here to there"
+    - "Problem: Optimal soldering plans"
+    - "Problem: Scheduling overlapping tasks"
+  notes: ../eboards/eboard02
 
 - topic: Asymptotic analysis
   abbrev: asymptotic-analysis
   summary: We begin to consider ways to analyze the running times of algorithms.
   subjects:
     - Review of complexity analysis from 301
-    - Additional characteristics of Big-Oh
+    - Big-Oh, formalized
+    - Characteristics of Big-Oh and associated proofs
+  notes: ../eboards/eboard03
+
+- topic: Asymptotic analysis, continued
+  abbrev: asymptotic-analysis-continued
+  summary: We continue to explore running time
+  subjects:
+    - Other characteristics of Big-Oh
     - Other notations (theta, little-oh)
     - Casual and careful loop counting
-
-- topic: Reflective activities
-  abbrev: reflective-activities
-  summary: We reflect on the learning goals of the first two days of class and ground our understanding in a variety of exercises.
-  subjects:
-    - Dijsktra's shortest-path algorithm
-    - Algorithm design principles
-    - Greedy algorithms
-    - Quick review of asymptotic/complexity analysis
-    - Additional characteristics of Big-Oh
+  notes: ../eboards/eboard04
 
 - topic: Divide-and-conquer algorithms and structures
   abbrev: divide-and-conquer
@@ -46,55 +44,44 @@
     - Review of divide-and-conquer algorithms and structures
     - Finding the median value in an array
     - Exponentiation with integer exponents
-    - Analyzing divide-and-conquer algorithms
+  notes: ../eboards/eboard05
+
+- topic: Pause for breath
+  abbrev: pause01
+  summary: We pause to discuss a variety of outstanding issues.
+  subjects:
+    - Nearest Neighbor, revisited
+    - Other Roughgarden examples
+  notes: ../eboards/eboard06
 
 - topic: Asymptotic analysis and recurrence relations
-  abbrev: proof-divide-and-conquer
+  abbrev: asymptotic-analysis
   summary: We explore ways to think about the running time of divide-and-conquer algorithms.
   subjects:
-    - The median algorithm, revised
-    - Two generic divide-and-conquer algorithms
-    - Modeling the running time of the generic algorithms
-    - Estimating the running time
-    - Looking ahead: The master theorem
+    - Analyzing recursive algorithms with recurrence relations
+    - Solving recurrence relations
+    - Looking ahead to the master theorem
+  notes: ../eboards/eboard07
 
-- topic: The Master Theorem
-  abbrev: master-theorem
-  summary: We consider proofs related to recurrence relations, and therefore to divide-and-conquer algorithms.
-  subjects:
-    - Detour - Recursion vs. iteration
-    - Recursion trees, revisited
-    - Proving asymptotic bounds of recursive functions
-    - The master theorem
+- topic: "Detour: Nearest Neighbors, revisited"
+  abbrev: nearest-neighbor
+  summary: We delve more deeply into the nearest neighbor algorithm.
+  notes: ../eboards/eboard08
 
-- topic: Roles of data structures and abstract data types
-  abbrev: data-structures
-  summary: We begin to consider the ADTs and data strutures that underlie many of the algorithms we write.
+- topic: Asymptotic analysis, revisited
+  abbrev: asymptotic-analysis-revisited
+  summary: We continue ideas from the prior class.
   subjects:
-    - Abstract data types
-    - Data structures
-    - The Dictionary ADT
-
-- topic: Hash Tables
-  abbrev: hash-tables
-  summary: We consider hash tables, one of the more popular implementations of the dictionary ADT.
-  subjects:
-    - Review of hash tables.
-    - Hash functions, revisited.
-    - Other uses of hash tables and hash functions.
-
-- topic: More on dictionaries
-  abbrev: dictionaries
-  summary: We consider some basic issues of the tree ADT / data structure.
-  subjects:
-    - Hash tables: semi-formal analysis
-    - Other ways to represent dictionaries
-    - Trees
+    - Nearest neighbor example
+    - More practice solving recurrence relations
+    - The recurrence formula theorem
+  notes: ../eboards/eboard09
 
 - topic: Binary search trees
   abbrev: bst
   summary: We continue trees in general and binary search trees in particular.
   subjects:
+    - A bit more about the recurrence formula theorem
     - Trees, formalized
     - Terminology
     - Binary trees
@@ -102,6 +89,7 @@
     - Binary search trees
     - Building balanced BSTs.
     - Balancing BSTs.
+  notes: ../eboards/eboard10
 
 - topic: Red-black trees 
   abbrev: red-black-trees
@@ -118,42 +106,31 @@
     - Deletion in binary-search trees
     - Deletion in red-black trees
 
-- topic: 2-3 trees
-  abbrev: two-three-trees
-  summary: We continue to explore balanced trees by considering another approach to balancing trees.
-  subjects:
-    - Review: red-black trees
-    - 2-3 trees
-    - Insertion in 2-3 trees
-    - Deletion in 2-3 trees
-
 - topic: Pause for breath
   abbrev: pause-05
   summary: We pause to catch up on balanced trees and other issues.
   subjects:
-    - Insertion in 2-3 trees, revisited
-    - Deletion in 2-3 trees
-    - B-trees
-    - 2-3-4 trees vs. red-black trees
+    - Red-black trees
+    - Other balanced trees
+  notes: ../eboards/eboard13
 
 - topic: Sorting
   abbrev: sorting
   summary: We begin our consideration of one of the most common algorithmic problems, that of putting a collection of values in order.
   subjects:
-    - Deletion in 2-3 trees
-    - Common sorting algorithms
     - Characteristics of sorting algorithms
-    - Detour - Thinking about algorithm design
+    - Common sorting algorithms
+  notes: ../eboards/eboard14
 
 - topic: Lower bounds on sorting algorithms
   abbrev: lower-bounds
   summary: We consider lower bounds on comparison-based sorting algorithms.
   subjects:
-    - Detour - Thinking about algorithm design
-    - Compare and swap algorithms
-    - Decision trees
-    - Estimating log(n!)
-    - Detour - Deletion in 2-3 trees
+    - Recap from prior class
+    - Some followup questions on algorithms
+    - A theorem about lower bounds
+    - Proving that theorem
+  notes: ../eboards/eboard15
 
 - topic: O(n) sorting algorithms
   abbrev: fast-sorting
@@ -163,6 +140,8 @@
     - Other strategies for sorting
     - Bucket sort
     - Radix sort
+  reading:
+    - Roughgarden 5.6
 
 - topic: Radix sort
   abbrev: radix-sort
@@ -173,6 +152,10 @@
     - Analyzing radix sort
     - Bucket sort, revisited
     - Analyzing bucket sort
+
+- topic: Pause for Breath
+  abbrev: pause07
+  summary: We pause again.
 
 - topic: Discussion of exam 1
   abbrev: exam1
