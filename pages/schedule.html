@@ -117,6 +117,7 @@ permalink: /schedule/
                 </div>
                 <div class="row stuff">
                   <div class="reading col-md-4 col-sm-4 col-xs-6">
+{% if includereadings %}
                     {% assign reading = class.reading %}
                     {% if reading.size > 1 %}
                       <strong>Readings</strong>
@@ -124,8 +125,10 @@ permalink: /schedule/
                       <strong>Reading</strong>
                     {% endif %}
                     {% include schedule_items.html items=reading default="_No reading_" %}
+{% endif %}
                   </div> <!-- reading -->
                   <div class="lab col-md-4 col-sm-4 col-xs-6">
+{% if includelab %}
                     {% assign lab = class.lab %}
                     {% if lab.size > 1 %}
                       <strong>Labs</strong>
@@ -133,6 +136,7 @@ permalink: /schedule/
                       <strong>Lab</strong>
                     {% endif %}
                     {% include schedule_items.html items=lab default="_No lab_"%}
+{% endif %}
                   </div> <!-- lab -->
                   <div class="clearfix visible-xs-block"></div>
                   <div class="additional col-md-4 col-sm-4 col-xs-12 {% unless additional %}hidden-xs{% endunless %}">
