@@ -10,7 +10,7 @@ due-time: 10:30pm
 
 *Due*: {{ page.due | date: '%A, %-d %B %Y' }} by {{ page.due-time }}
 
-*Summary*: In this assignment, you will implement two different sorting
+*Summary*: In this assignment, you will implement three different sorting
 algorithms, one of your own design.
 
 *Purposes*: To enhance your understanding of sorting algorithms.  To give
@@ -67,9 +67,11 @@ algorithm should, at minimum,
 You are also free to make other optimizations.  For example, you
 might
 
-* Consider identifying reverse-sorted sequences and how to process them quickly.
+* Consider identifying reverse-sorted sequences and how to process 
+  them quickly.
 * Look at ways to improve individual lines of code.
 * Incorporate other stable mechanisms for sorting.
+* Find ways to avoid copying.
 
 You will use the provided analysis code to determine how much faster
 your algorithm is than the original merge sort algorithm on a variety
@@ -87,7 +89,34 @@ make sure to cite those details.
 ## Part Two: Radix sort for strings
 
 As you may recall, *radix sort* for integers works by using the binary
-digits of the integer, repeatedly grabbing the 0's at each location and
-putting them before the 1's at the same location.  If we move from lower-order
-bits to higher-order bits, this mechanism 
+digits of the integer, repeatedly grabbing the 0's at each location
+and putting them before the 1's at the same location.  If we move
+from lower-order bits to higher-order bits, this mechanism ends up
+sorting the values.
 
+We can do the same thing with strings.  We start at the righmost
+character in the strings.  (For now, we'll assume that all of the
+strings are the same length.)  We put the a's before the b's before
+the c's, ....  Then we go to the next-to-rightmost character, and
+so on and so forth.
+
+Implment this form of radix sort for strings of up to eight characters.
+You can rely on `ithchar` (in the provided code) to grab each character.
+`ithchar` helps with strings shorter than eight characters.
+
+### Part Three: Bucket sort
+
+As you may recall, bucket sort sorts values by separating the values
+into separate buckets depending on some easy-to-calculate aspect
+of the values, an aspect that is related to the ordering.  For
+example, we might put all the strings that begin with 'a' together
+in a bucket, all the strings that begin with 'b' together in another
+bucket, all the strings that begin with 'c' in a third bucket, and
+so on and so forth.  After that, we'll need to sort the values in each
+bucket, which we will often do with another sorting algorithm (or by
+using a variant of bucket sort that looks at the next character).
+
+But we don't need just 26 buckets.  We could, for example, use 27\*27
+buckets, where the bucket for a string depends on the first two letters.
+
+Implement such a bucket sort.
