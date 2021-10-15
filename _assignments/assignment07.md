@@ -81,6 +81,15 @@ c. Using that invariant, determine the division of the final course based on the
 
 ---
 
-**Citations**.  The Dutch National Flag problem is due to Dijkstra.  The
-Course Selection problem is taken from an exam in an earlier section of
-CSC-301.  It is based on a common loop invariant problem.
+**Citations**.  The Dutch National Flag problem is due to Dijkstra.
+The Course Selection problem is taken from an exam in an earlier
+section of CSC-301.  It is based on a common loop invariant problem.
+Selection Sort is a well-known algorithm; I was not able to find
+credit for an author, other than a seemingly humorous claim that
+[Oscar Wilde invented selection
+sort](http://selectionsaucesort.fandom.com/wiki/History), one which
+is also [repeated in other
+places](http://blogsofkshitij.com/algorithms/selectionsort.html).
+Conveniently, neither offers a definitive source for that claim.
+I wish _name elided for privacy_ were still here; he'd probably
+know the actual source.
