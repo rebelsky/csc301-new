@@ -134,7 +134,7 @@
 
 - topic: O(n) sorting algorithms
   abbrev: fast-sorting
-  summary: We consider some algorithms that achieve O(n) running time, often by limitin the input in certain ways.
+  summary: We consider some algorithms that achieve O(n) running time, often by limiting the input in certain ways.
   subjects:
     - A sorting exercise
     - Other strategies for sorting
@@ -142,30 +142,17 @@
     - Radix sort
   reading:
     - Roughgarden 5.6
+  notes: ../eboards/eboard16
 
-- topic: Radix sort
-  abbrev: radix-sort
-  summary: We continue our exploration of O(n) algorithms, focusing primarily on bucket sort and radix sort
-  subjects:
-    - Another sorting example
-    - Radix sort
-    - Analyzing radix sort
-    - Bucket sort, revisited
-    - Analyzing bucket sort
+- topic: Prep for Assignment 6
+  abbrev: hw6a
+  summary: We consier issues of sorting in preparation for assignment 6.
+  notes: ../eboards/eboard17
 
-- topic: Pause for Breath
-  abbrev: pause07
-  summary: We pause again.
-
-- topic: Discussion of exam 1
-  abbrev: exam1
-  summary: We consider exam 1
-  subjects:
-    - Problem 1
-    - Problem 2
-    - Problem 3
-    - Problem 4
-    - Problem 5
+- topic: More prep for Assignment 6
+  abbrev: hw6b
+  summary: We consier issues of sorting in preparation for assignment 6.
+  notes: ../eboards/eboard18
 
 - topic: Tries
   abbrev: tries
@@ -174,17 +161,7 @@
     - Review of dictionaries
     - Costs of dictionary implementations
     - Tries
-
-- topic: Pause for breah
-  abbrev: pause-07
-  summary: We wrap up a variety of topics
-
-- topic: Detour - Skip lists
-  abbrev: skip-lists
-  summary: We consider some details of skip lists.
-  subjects:
-    - Reading the algorithms literature
-    - Skip lists
+  notes: ../eboards/eboard19
 
 - topic: Program verification (1)
   abbrev: verification-1
@@ -192,28 +169,36 @@
   subjects:
     - Goals for this unit
     - Verifying imperative code
+    - Loop invariants
     - Example - binary search
+  notes: ../eboards/eboard20
 
 - topic: Program verification (2)
   abbrev: verification-2
   summary: We consider the details of common verification mechanisms.
   subjects:
     - Example - binary search, revised
-    - Verifying recursive procedures
+    - Example - DNF
     - Example - Efficient exponentiation with recursion
+    - Example - Efficient exponentiation with iteration
+  notes: ../eboards/eboard21
 
 - topic: Program verification (3)
   abbrev: verification-3
-  summary: We continue our exploration of program verification.
+  summary: We conclude our exploration of program verification and loop invariants.
   subjects:
+    - About HW7
     - Example - Efficient exponentiation with iteration
+    - Other invariants
+  notes: ../eboards/eboard22
 
-- topic: Program verification (4)
-  abbrev: verification-4
-  summary: We conclude our exploration of program verification with a traditional example.
-  subjects:
-    - Loop invariants, revisited
-    - Example - Dutch national flag
+- topic: Coded Bias Watch Party
+  abbrev: coded-bias
+  summary: We watch "Coded Bias" in preparation for a discussion.
+
+- topic: Implications of Coded Bias
+  abbrev: coded-bias-discussion
+  summary: We consider the implications of Coded Bias on our own practices as computer scientists and algorithm designers.
 
 - topic: Shortest paths
   abbrev: shortest-paths
@@ -249,6 +234,10 @@
     - Four implementations of graphs
     - Associated costs
 
+- topic: Pause for Breath
+  abbrev: pause07
+  summary: We pause again.
+
 - topic: Sets and union-find
   abbrev: union-find
   summary: We consider an algorithm and structure that are useful in a variety of situations.
@@ -283,15 +272,6 @@
     - Dynamic programming, generalized
     - The knapsack problem
 
-- topic: Discussion of exam 2
-  abbrev: exam2
-  summary: We consider common issues on exam 2
-  subjects:
-    - Revisiting the cost of the stamps problem
-    - The 0-1 knapsack problem, continued
-    - Issues with problem 2 (Tries)
-    - Issues with problem 3 (Loop invariants)
-
 - topic: Dynamic programming (3)
   abbrev: dynamic-programming-3
   summary: We conclude our initial exploration of dynamic programming by visiting a common dynamic programming algorithm, approximate string matching.
@@ -318,6 +298,18 @@
     - Keeping track of look-ahead
     - Building the table
 
+- topic: Genetic distance (1)
+  abbrev: genetic-distance-1
+  summary: We explore the algorithms used by gene sequencing algorithms to determine genetic distance
+
+- topic: Genetic distance (2)
+  abbrev: genetic-distance-2
+  summary: We consider some of the implications of the genetic distance algorithms
+
+- topic: Genetic distance (3)
+  abbrev: genetic-distance-3
+  summary: We conclude our discussion of genetic distance.
+
 - topic: "Looking ahead: P vs. NP"
   abbrev: p-vs-np
 
@@ -326,6 +318,3 @@
 
 - topic: Evaluate and debrief
   abbrev: debrief
-
-- topic: Final Examination
-  abbrev: final
