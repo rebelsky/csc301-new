@@ -1,29 +1,24 @@
 ---
-title: "Assignment 7"
+title: "Assignment 7: Loop Invariants"
 number: 7
-link: false
-assigned: 2021-10-06
-due: 2021-10-14
+link: true
+assigned: 2021-10-15
+due: 2021-10-25
 due-time: 10:30pm
 ---
 # {{ page.title }}
 
 *Due*: {{ page.due | date: '%A, %-d %B %Y' }} by {{ page.due-time }}
 
-*Summary*: In this assignment, you will implement two different sorting
-algorithms, one of your own design.
+*Summary*: In this assignment, you will write some algorithms and develop
+proofs of corrects using loop invariants and related techniques.
 
-*Purposes*: To enhance your understanding of sorting algorithms.  To give
-you more practice programming.
+*Purposes*: To give you practice with loop invariants.  To introduce
+you to some other important algorithms.
 
-*Collaboration* (programming): You may discuss this assignment with
+*Collaboration*: You may discuss this assignment with
 anyone you like, provided you credit such discussion when you submit
-the assignment.  You may also look for solutions online, although
-you will likely learn more if you try to implement them yourself
-before relying online solutions.  You should not develop code
-together, but you may certainly help each other debug code.  Each
-person should write up his, her, zir, or their own work and submit
-it individually.
+the assignment.  You should not look for solutions online.
 
 *Submitting*: Turn in your work on Gradescope.  Make sure to include
 your name, course information, and date at the top of each code
@@ -39,55 +34,53 @@ we may spend class time publicly critiquing your work.
 
 ---
 
-You now know a variety of sorting algorithms.  In practice, many 
-people use variants of these sorting algorithms.  For example,
-TimSort, which is used by Python and Java, looks for nearly-sorted
-sections, sorts those by using insertion sort, and then combines
-neighboring sorted sections using the merge from merge sort.  People
-who understand their data well might use a variant of one of the
-O(n) sorting algorithms.
+Problem 1: Dutch National Flag
+------------------------------
 
-## Part One: Design your own sorting algorithm
+[Wikipedia](https://en.wikipedia.org/wiki/Dutch_national_flag_problem) describes the Dutch National Flag (DNF) problem as follows.
 
-In the sample code that accompanies this assignment, you will find
-implementations of merge sort and insertion sort for arrays of
-strings.  As noted above, we can usually achieve better speed both
-by taking a less strict approach to merge sort and by using insertion
-sort for some chunks.
+> The Dutch national flag problem is a computer science programming problem proposed by Edsger Dijkstra. The flag of the Netherlands consists of three colors: red, white, and blue. Given balls of these three colors arranged randomly in a line (it does not matter how many balls there are), the task is to arrange them such that all balls of the same color are together and their collective color groups are in the correct order.
 
-Your goal is to write a sorting algorithm that "generally" behaves
-more quickly than the version of merge sort that we've provided.  Your
-algorithm should, at minimum,
+A traditional loop invariant for this problem divides the array of values into four sections: elements we've already identified as red, elements we've already identified as white, elements we have not yet processed, and elements we've identified as blue.  It might be drawn as follows.
 
-* Identify appropriate sequences that are already sorted or close to
-  sorted.  In the latter case, it should use insertion sort to sort
-  them.
-* Merge neighboring sorted sequences as appropriate.
+```
++-----------+-------+-----------------------------+-------+
+|    red    | white |       unprocessed           |  blue |
++-----------+-------+-----------------------------+-------+
+```
 
-You are also free to make other optimizations.  For example, you
-might
+Using the techniques we've discussed and used in class, develop an iterative in-place algorithm that solves the DNF problem and prove your algorithm correct.  Make sure to prove that the final array has the form "all reds, all whites, all blues" and that the central loop terminates.
 
-* Consider identifying reverse-sorted sequences and how to process them quickly.
-* Look at ways to improve individual lines of code.
-* Incorporate other stable mechanisms for sorting.
+You need not implement your algorithm; pseudocode suffices.
 
-You will use the provided analysis code to determine how much faster
-your algorithm is than the original merge sort algorithm on a variety
-of sample inputs.
+Problem 2: Selection Sort
+-------------------------
 
-Please create two new files, `name-sort.h` and `name-sort.c`
-(substituting in your name for "name") and update the analysis code
-to use your code, too.
+As you may recall, the Selection Sort algorithm works by repeatedly finding
+the largest (or smallest) remaining element in the array and putting it
+in the correct position.  Develop an appropriate loop invariant for 
+Selection sort and then prove the algorithm correct.
 
-We will celebrate the best sorting algorithms in class.
+You need not implement your algorithm; pseudocode suffices.
 
-If you look for details about TimSort or other fast sorting algorithm,
-make sure to cite those details.
+### Problem 3: Randomly selecting courses
 
-## Part Two: Radix sort for strings
+Professor R and their advisee are working on preregistration. While they’ve agreed on the first three courses (CS, Studio Art, and Foreign Language), they are debating what the student should take for the fourth course. It could be a course in the Humanities it could be be a course in one of the Social Sciences. They’ve made a list of possible courses. They decide to repeatedly apply the following process for narrowing down the list of courses.
 
-As you may recall, *radix sort* for integers works by using the binary
-digits of the integer, repeatedly grabbing the 0's at each location and
-putting them before the 1's at the same location.  If we move from lower-order
-bits to higher-order bits, this mechanism 
+* Randomly pick two courses from the list.
+* If the two courses are in the same division, that’s a sign that that division dominates too much. Get rid of both courses. But to make sure that we still have a reasonable selection, add a new humanities course to the list. (You can assume that there are arbitrarily many new humanities courses to add.)
+* If the two courses are in different divisions, keep the social science and drop the humanities course. (Dropping the humanities course in this case conceptually offsets the addition of the humanities course in the prior case.)
 
+I didn’t say that it was a sensible approach. Just that it was an approach. Still, my advisees may be familiar with it.
+
+a. Prove that the process terminates with only one course.
+
+b. Write a loop invariant that provides useful information about the state of the system (e.g., the number of humanities and/or social science courses that remain).
+
+c. Using that invariant, determine the division of the final course based on the number of initial courses in each division.
+
+---
+
+**Citations**.  The Dutch National Flag problem is due to Dijkstra.  The
+Course Selection problem is taken from an exam in an earlier section of
+CSC-301.  It is based on a common loop invariant problem.
