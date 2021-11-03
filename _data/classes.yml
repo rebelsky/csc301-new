@@ -199,15 +199,18 @@
 - topic: Implications of Coded Bias
   abbrev: coded-bias-discussion
   summary: We consider the implications of Coded Bias on our own practices as computer scientists and algorithm designers.
+  notes: ../eboards/eboard24
 
 - topic: Shortest paths
   abbrev: shortest-paths
   summary: We start our exploration of graphs by considering algorithms for computing the shortest path between nodes in a graph.
   subjects:
-    - The shortest-path problem.
-    - Dijkstra's shortest-path algorithm.
-    - Analyzing Dijkstra's shortest-path algorithm.
+    - Graphs
+    - The shortest-path problem
+    - Dijkstra's shortest-path algorithm
+    - Analyzing Dijkstra's shortest-path algorithm
     - All-pairs shortest-path algorithms
+  notes: ../eboards/eboard25
 
 - topic: Minimum spanning trees
   abbrev: mst
@@ -216,6 +219,7 @@
     - Minimum spanning trees
     - Examples
     - Designing an MST algorithm
+  notes: ../eboards/eboard26
 
 - topic: Miniumum spanning trees, continued
   abbrev: mst-continued
@@ -224,6 +228,17 @@
     - Prim's algorithm and Kruskal's algorithm
     - Efficiency
     - Proofs of correctness
+  notes: ../eboards/eboard27
+
+- topic: Sets and union-find
+  abbrev: union-find
+  summary: We consider an algorithm and structure that are useful in a variety of situations.
+  subjects:
+    - A set ADT
+    - Data structure design, revisited
+    - The union-find structure
+    - Analyzing union find
+    - Improving union-find
 
 - topic: Implementing graphs
   abbrev: graph-implementations
@@ -237,16 +252,6 @@
 - topic: Pause for Breath
   abbrev: pause07
   summary: We pause again.
-
-- topic: Sets and union-find
-  abbrev: union-find
-  summary: We consider an algorithm and structure that are useful in a variety of situations.
-  subjects:
-    - A set ADT
-    - Data structure design, revisited
-    - The union-find structure
-    - Analyzing union find
-    - Improving union-find
 
 - topic: Network flows
   abbrev: network-flows
