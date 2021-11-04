@@ -239,6 +239,7 @@
     - The union-find structure
     - Analyzing union find
     - Improving union-find
+  notes: ../eboards/eboard28
 
 - topic: Implementing graphs
   abbrev: graph-implementations
