@@ -241,51 +241,71 @@
     - Improving union-find
   notes: ../eboards/eboard28
 
-- topic: Implementing graphs
-  abbrev: graph-implementations
-  summary: We consider how we might implement/represent graphs in the computer.
-  subjects:
-    - MSTs, concluded
-    - Key graph operations
-    - Four implementations of graphs
-    - Associated costs
-
-- topic: Pause for Breath
-  abbrev: pause07
-  summary: We pause again.
+- topic: Implementing MST algorithms
+  abbrev: mst-implement
+  summary: We consider how we might implement MSTs
+  notes: ../eboards/eboard29
 
 - topic: Network flows
-  abbrev: network-flows
+  abbrev: network-flows-1
   summary: We explore netflork flow algorithms and their applications.
   subjects:
     - Looking back to graph algorithms
     - Network flows
+  notes: ../eboards/eboard30
+
+- topic: Network flows, continued
+  abbrev: network-flows-2
+  summary: We continue to explore netflork flow algorithms and their applications.
+  subjects: 
+    - The Ford-Fulkerson algorithm
     - Bipartite matching
+    - Further applications of network flow
+  notes: ../eboards/eboard31
 
 - topic: Dynamic programming (1)
   abbrev: dynamic-programming-1
   summary: We consider another important algorithm design technique.
   subjects:
-    - A motivating problem
+    - Fibonacci numbers
+    - The stamps problem
     - The value of caching
     - Dynamic programming, generalized
+  notes: ../eboards/eboard32
+
+- topic: The return of greed
+  abbrev: greed-returns
+  summary: Motivated by the stamps problem, we return to greedy solutions for coins and other objects.
+  subjects:
+    - Greedy coins
+    - The activity selection problem
+    - Why prove?
+    - Proofs of correctness
+  notes: ../eboards/eboard33
 
 - topic: Dynamic programming (2)
   abbrev: dynamic-programming-2
-  summary: We continue our consideration of dynamic programming
+  summary: We further continue our consideration of dynamic programming
   subjects:
-    - The value of caching
-    - Dynamic programming, generalized
-    - The knapsack problem
+    - Generalizing the technique
+    - Other problems
+   
+- topic: Skip Lists (1)
+  abbrev: skip-lists-1
+  summary: We consider an algorithm from the literature
 
 - topic: Dynamic programming (3)
   abbrev: dynamic-programming-3
-  summary: We conclude our initial exploration of dynamic programming by visiting a common dynamic programming algorithm, approximate string matching.
+  summary: We conclude our initial exploration of dynamic programming.
   subjects:
-    - Review: Core ideas of dynamic programming
+    - Review of Core ideas of dynamic programming
     - The edit distance problem
     - Formulating a solution
     - Varying the solution
+
+- topic: Skip Lists (2)
+  abbrev: skip-lists-2
+  summary: We return to an algorithm from the literature
 
 - topic: Basics of string matching
   abbrev: string-matching basics
@@ -303,18 +323,6 @@
     - The hash-code approach
     - Keeping track of look-ahead
     - Building the table
-
-- topic: Genetic distance (1)
-  abbrev: genetic-distance-1
-  summary: We explore the algorithms used by gene sequencing algorithms to determine genetic distance
-
-- topic: Genetic distance (2)
-  abbrev: genetic-distance-2
-  summary: We consider some of the implications of the genetic distance algorithms
-
-- topic: Genetic distance (3)
-  abbrev: genetic-distance-3
-  summary: We conclude our discussion of genetic distance.
 
 - topic: "Looking ahead: P vs. NP"
   abbrev: p-vs-np
