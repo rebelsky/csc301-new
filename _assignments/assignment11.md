@@ -1,7 +1,7 @@
 ---
-title: "Assignment 11"
+title: "Assignment 11: Skip Lists"
 number: 11
-link: false
+link: true
 assigned: 2021-11-17
 due: 2021-12-02
 due-time: 10:30pm
@@ -10,11 +10,11 @@ due-time: 10:30pm
 
 *Due*: {{ page.due | date: '%A, %-d %B %Y' }} by {{ page.due-time }}
 
-*Summary*: In this assignment, you will implement two different sorting
-algorithms, one of your own design.
+*Summary*: In this assignment, you will implement an algorithm from
+the literature.
 
-*Purposes*: To enhance your understanding of sorting algorithms.  To give
-you more practice programming.
+*Purposes*: To give you practice reading algorithms as described for
+practitioners.  To give you you more practice programming.
 
 *Collaboration* (programming): You may discuss this assignment with
 anyone you like, provided you credit such discussion when you submit
@@ -39,55 +39,12 @@ we may spend class time publicly critiquing your work.
 
 ---
 
-You now know a variety of sorting algorithms.  In practice, many 
-people use variants of these sorting algorithms.  For example,
-TimSort, which is used by Python and Java, looks for nearly-sorted
-sections, sorts those by using insertion sort, and then combines
-neighboring sorted sections using the merge from merge sort.  People
-who understand their data well might use a variant of one of the
-O(n) sorting algorithms.
+Read the following article.
 
-## Part One: Design your own sorting algorithm
+William Pugh. 1990. Skip lists: a probabilistic alternative to balanced trees. _Commun. ACM_ 33, 6 (June 1990), 668-676. DOI=10.1145/78973.78977. <http://doi.acm.org/10.1145/78973.78977.>
 
-In the sample code that accompanies this assignment, you will find
-implementations of merge sort and insertion sort for arrays of
-strings.  As noted above, we can usually achieve better speed both
-by taking a less strict approach to merge sort and by using insertion
-sort for some chunks.
+Then implement skip lists in either Scheme, C, or Java. Your implementation should include a procedure that prints out the current state of the skip list. (You may find it easier to print them vertically, rather than horizontally.) You should also provide an appropriate test suite.
 
-Your goal is to write a sorting algorithm that "generally" behaves
-more quickly than the version of merge sort that we've provided.  Your
-algorithm should, at minimum,
+Note Although you can easily find some implementations online, you will not gain the necessary understanding if you rely on those implementations. As one of my colleagues says, “There’s a benefit to the pain of debugging a data structure.”
 
-* Identify appropriate sequences that are already sorted or close to
-  sorted.  In the latter case, it should use insertion sort to sort
-  them.
-* Merge neighboring sorted sequences as appropriate.
-
-You are also free to make other optimizations.  For example, you
-might
-
-* Consider identifying reverse-sorted sequences and how to process them quickly.
-* Look at ways to improve individual lines of code.
-* Incorporate other stable mechanisms for sorting.
-
-You will use the provided analysis code to determine how much faster
-your algorithm is than the original merge sort algorithm on a variety
-of sample inputs.
-
-Please create two new files, `name-sort.h` and `name-sort.c`
-(substituting in your name for "name") and update the analysis code
-to use your code, too.
-
-We will celebrate the best sorting algorithms in class.
-
-If you look for details about TimSort or other fast sorting algorithm,
-make sure to cite those details.
-
-## Part Two: Radix sort for strings
-
-As you may recall, *radix sort* for integers works by using the binary
-digits of the integer, repeatedly grabbing the 0's at each location and
-putting them before the 1's at the same location.  If we move from lower-order
-bits to higher-order bits, this mechanism 
-
+Submit your work on Gradescope.
