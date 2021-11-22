@@ -54,13 +54,29 @@
   due:
     - page: /assignments/assignment08.html
 
+- date: 2021-11-05
+  assigned:
+    - page: /assignments/assignment09.html
+
 - date: 2021-11-11
   due:
     - page: /assignments/assignment09.html
 
+- date: 2021-11-12
+  assigned:
+    - page: /assignments/assignment10.html
+
 - date: 2021-11-18
   due:
     - page: /assignments/assignment10.html
+
+- date: 2021-11-19
+  assigned:
+    - page: /assignments/assignment11.html
+
+- date: 2021-11-22
+  assigned:
+    - page: /assignments/assignment12.html
 
 - date: 2021-12-02
   due:
@@ -69,5 +85,4 @@
 - date: 2021-12-09
   due:
     - page: /assignments/assignment12.html
-
 
