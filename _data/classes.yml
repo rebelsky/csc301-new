@@ -289,23 +289,31 @@
   subjects:
     - Generalizing the technique
     - Other problems
+  notes: ../eboards/eboard34
    
-- topic: Skip Lists (1)
+- topic: Skip Lists (1) and Dynamic Programming (3)
   abbrev: skip-lists-1
   summary: We consider an algorithm from the literature
+  subjects:
+    - Introduction to skip lists
+    - Knapsack, continued
+    - Edit distance
+  notes: ../eboards/eboard34
 
-- topic: Dynamic programming (3)
-  abbrev: dynamic-programming-3
+- topic: Dynamic programming (4)
+  abbrev: dynamic-programming-4
   summary: We conclude our initial exploration of dynamic programming.
   subjects:
-    - Review of Core ideas of dynamic programming
-    - The edit distance problem
-    - Formulating a solution
-    - Varying the solution
+    - Edit distance, continued
+    - Review of key ideas
 
 - topic: Skip Lists (2)
   abbrev: skip-lists-2
   summary: We return to an algorithm from the literature
+
+- topic: Topological sort
+  abbrev: topological-sort
+  summary: We catch up on a missed topic
 
 - topic: Basics of string matching
   abbrev: string-matching basics
@@ -323,9 +331,6 @@
     - The hash-code approach
     - Keeping track of look-ahead
     - Building the table
-
-- topic: "Looking ahead: P vs. NP"
-  abbrev: p-vs-np
 
 - topic: Wrapup
   abbrev: wrapup
