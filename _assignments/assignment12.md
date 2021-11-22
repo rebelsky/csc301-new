@@ -1,8 +1,8 @@
 ---
-title: "Assignment 12"
+title: "Assignment 12: Dynamic Programming and More"
 number: 12
-link: false
-assigned: 2021-12-01
+link: true
+assigned: 2021-11-22
 due: 2021-12-09
 due-time: 10:30pm
 ---
@@ -10,20 +10,16 @@ due-time: 10:30pm
 
 *Due*: {{ page.due | date: '%A, %-d %B %Y' }} by {{ page.due-time }}
 
-*Summary*: In this assignment, you will implement two different sorting
-algorithms, one of your own design.
+*Summary*: In this assignment, you will explore dynamic programming as
+well as a few other unrelated algorithms.
 
 *Purposes*: To enhance your understanding of sorting algorithms.  To give
 you more practice programming.
 
 *Collaboration* (programming): You may discuss this assignment with
 anyone you like, provided you credit such discussion when you submit
-the assignment.  You may also look for solutions online, although
-you will likely learn more if you try to implement them yourself
-before relying online solutions.  You should not develop code
-together, but you may certainly help each other debug code.  Each
-person should write up his, her, zir, or their own work and submit
-it individually.
+the assignment.  Each person should write up his, her, zir, or their
+own work and submit it individually.
 
 *Submitting*: Turn in your work on Gradescope.  Make sure to include
 your name, course information, and date at the top of each code
@@ -39,55 +35,56 @@ we may spend class time publicly critiquing your work.
 
 ---
 
-You now know a variety of sorting algorithms.  In practice, many 
-people use variants of these sorting algorithms.  For example,
-TimSort, which is used by Python and Java, looks for nearly-sorted
-sections, sorts those by using insertion sort, and then combines
-neighboring sorted sections using the merge from merge sort.  People
-who understand their data well might use a variant of one of the
-O(n) sorting algorithms.
+## Problems
 
-## Part One: Design your own sorting algorithm
+### Problem 1: Transpositions
 
-In the sample code that accompanies this assignment, you will find
-implementations of merge sort and insertion sort for arrays of
-strings.  As noted above, we can usually achieve better speed both
-by taking a less strict approach to merge sort and by using insertion
-sort for some chunks.
+Typists often make _transposition errors_ when they type, exchanging
+neighboring characters.  For example, I first typed "trnasposition"
+instead of "transposition".  Under the edit distance algorithm we 
+developed in class, that would require two deletions and two insertions.
 
-Your goal is to write a sorting algorithm that "generally" behaves
-more quickly than the version of merge sort that we've provided.  Your
-algorithm should, at minimum,
+Incorporate a _swap_ operation and cost in our edit distance algorithm.
 
-* Identify appropriate sequences that are already sorted or close to
-  sorted.  In the latter case, it should use insertion sort to sort
-  them.
-* Merge neighboring sorted sequences as appropriate.
+### Problem 2: Interleaving
 
-You are also free to make other optimizations.  For example, you
-might
+Suppose you are given three strings, X, Y, and Z, where
+|X| = _n_, |Y| = _m_, and |Z| = _m_ + _n_.  _Z_ is an _interleaf_
+of X and Y if and only if Z can be formed by interleaving
+sequences of characters from X and Y in a way that maintains
+the left-to-right ordering of X and Y.  For example, "split"
+is an interleaving of "spit" and "l", but "splti" is not.
 
-* Consider identifying reverse-sorted sequences and how to process them quickly.
-* Look at ways to improve individual lines of code.
-* Incorporate other stable mechanisms for sorting.
+a. Show that "cchocohilaptes" is an interleaf of "chocolate" and
+"chips", assuming the first c comes from "chocolate".
 
-You will use the provided analysis code to determine how much faster
-your algorithm is than the original merge sort algorithm on a variety
-of sample inputs.
+b. Show that "cchocohilaptes" is an interleaf of "chocolate" and
+"chips", assuming the first c comes from "chips".
 
-Please create two new files, `name-sort.h` and `name-sort.c`
-(substituting in your name for "name") and update the analysis code
-to use your code, too.
+c. Give an efficient dynamic programing algorithm that takes
+X, Y, and Z as parameters and determines whether Z is an in
+interleaf of X and Y.
 
-We will celebrate the best sorting algorithms in class.
+_Hint_: The values of the dynamic programming matrix should be
+Booleans.
 
-If you look for details about TimSort or other fast sorting algorithm,
-make sure to cite those details.
+### Problem 3: Longest common substrings
 
-## Part Two: Radix sort for strings
+The _longest common substring_ of two strings, X and Y, is the
+longst string that appears as a run of consecutive letters in
+both strings.  For example, the longest common substring of 
+"photograph" and "tomography" is "ograph".
 
-As you may recall, *radix sort* for integers works by using the binary
-digits of the integer, repeatedly grabbing the 0's at each location and
-putting them before the 1's at the same location.  If we move from lower-order
-bits to higher-order bits, this mechanism 
+Write a dynamic programming algorithm to solve the longest
+common substring problem.
 
+### Problem 4: One of these things is not like the others
+
+a. Implement topological sort in Scheme, C, or Java.
+
+b. Give three "real world" problems that could be solved by
+topological sort.
+
+## Citations
+
+Problems 1 through 3 were adapted from Skienna.
