@@ -296,16 +296,17 @@
   summary: We consider an algorithm from the literature
   subjects:
     - Introduction to skip lists
-    - Knapsack, continued
+    - Knapsack, concluded
     - Edit distance
-  notes: ../eboards/eboard34
+  notes: ../eboards/eboard35
 
 - topic: Dynamic programming (4)
   abbrev: dynamic-programming-4
   summary: We conclude our initial exploration of dynamic programming.
   subjects:
     - Edit distance, continued
-    - Review of key ideas
+    - Variations of edit distance
+  notes: ../eboards/eboard36
 
 - topic: Skip Lists (2)
   abbrev: skip-lists-2
