@@ -311,10 +311,12 @@
 - topic: Skip Lists (2)
   abbrev: skip-lists-2
   summary: We return to an algorithm from the literature
+  notes: ../eboards/eboard37
 
 - topic: Topological sort
   abbrev: topological-sort
   summary: We catch up on a missed topic
+  notes: ../eboards/eboard38
 
 - topic: Basics of string matching
   abbrev: string-matching basics
