@@ -121,39 +121,59 @@ These Learning outcomes were formed by Nicole Eikmeier, Peter-Michael Osera, and
 ### List of core topics
 
 a. Program/Algorithm correctness/verification by construction
+
 b. Loop Invariants
+
 c. Formal proof of asymptotic classes: Little oh, big Omega, Big Theta
+
 d. Solving recurrence relations
-e. Using the Master Theorem
+
+e. Using the Recurrence Formula Theorem
+
 f. Comparison Based Sorts are lower bounded by nlog(n)
+
 g. Bucket Sort & Radix Sort
+
 h. Topological Sort
+
 i. Algorithm Design Strategies:
     * Exhaustive Search
     * Divide & Conquer
     * Greedy Algorithms
     * Dynamic Programming
+
 j. Network flow
+
 k. Bipartite graphs/matching
+
 l. Tries
+
 m. Union find/Disjoint sets
+
 n. Something from the primary literature
+
 o. Balanced trees
 
 ### Learning outcomes
 
-* Given a problem statement, students can write/develop a loop invariant alongside an algorithm, and can prove the correctness of their algorithm via a loop-invariant technique. 
-* Students can recite the formal definition of Big-Oh, little-oh, Big-Omega and Big-Theta, and formally prove properties of these classes.
-* Students can prove asymptotic bounds on iterative algorithms with non-trivial nesting.
-* Students can explain why comparison-based sorts take order nlogn in the worst case.
-* Students can reproduce Radix, Bucket, and Topological Sorts, and explain the context in which these sorting algorithms are useful.
+* Given a problem statement, students can write/develop a loop invariant alongside an algorithm.
+* Students can prove the correctness of their algorithm via a loop-invariant technique. 
+* Students can recite the formal definition of Big-Oh, little-oh, Big-Omega and Big-Theta.
+* Students can formally prove properties of these classes.
+* Students can prove or compute asymptotic bounds on iterative algorithms with non-trivial nesting.
+* Students can explain why all comparison-based sorts have an input that takes order Omega(nlogn).
+* Students can reproduce Radix Sort and Bucket Sort and explain contexts in which these algorithms are useful.
+* Students can reproduce Topological sort and explain contexts in which this algorithm is useful.
 * Given an algorithm which uses Divide-and-Conquer, students can develop a recurrence relation for that algorithm.
-* Given a recurrence relation, students can solve the relation using the Master Theorem and other techniques.
+* Given a recurrence relation, students can solve the relation using the Recurrence Formula Theorem and other techniques.
 * Students can consider different algorithmic design strategies when solving problems.
-* Students can solve problems using each of divide and conquer, greedy, and dynamic techniques.
+* Students can solve problems using divide and conquer techniques.
+* Students can solve problems using greedy techniques.
+* Students can solve problems using dynamic programming techniques.
 * Students can adapt network flow algorithms to solve appropriate network problems.
 * Students can implement an advanced data structure or algorithm, demonstrating good software design practices including documentation and testing.
 * Students can explain the tradeoffs between different data structures when they are used for similar problems.
+* Given an incorrect algorithm, students can find an example on which it fails.
 * Students can implement a balanced tree.
 * Students can read and understand a primary source from the literature of algorithms.
 * Students can explain how structural racism or other unexpected consequences can manifest in algorithm design.
@@ -280,15 +300,27 @@ This semester, we will have multiple kinds of work.
     * Some design
     * Some proof
     * Some implementation
-* Exams
 * Potentially "short assessments" like those we are now using in CSC-151
 * An essay or two
 
 ### Letter grades
 
-Letter grades for the course are determined by *bundles*, a collection of required grades for each of the deliverable categories.
-You will receive the grade corresponding to the bundle for which you meet *all* of the requirements.
-All bundles list *minimum amounts*, you may exceed the requirements for a bundle and still qualify for it.
+Letter grades for the course will depend on the number of the core learning outcomes you demonstrate to my satisfaction.  You will demonstrate mastery of most of those outcomes through homework assignments.  I may ask for followup demonstrate through short quizzes or interviews.  At the end of the semester, I will ask you to provide me with a *portfolio* of work in which you demonstrate your accomplishment of the class's learning goals.
+
+Your base grade depends on the number of learning outcomes for which you have provided compelling evidence of appropriate mastery.
+
+* **A**: Clear evidence of having met _all twenty_ learning outcomes.
+* **A-**: Clear evidence of having met _nineteen_ learning outcomes.
+* **B+**: Clear evidence of having met _eighteen_ learning outcomes.
+* **B**: Clear evidence of having met _seventeen_ learning outcomes.
+* **B-**: Clear evidence of having met _sixteen_ learning outcomes.
+* **C+**: Clear evidence of having met _fifteen_ learning outcomes.
+* **C**: Clear evidence of having met _fourteen_ learning outcomes.
+* **D**: Clear evidence of having met _twelve or thirteen_ learning outcomes.
+* **F**: Insufficient evidence to demonstrate meeting twelve or more learning
+  outcomes.
+
+Your grade may also be impacted by attendance, class participation, and timeliness in completing work.
 
 Note that I reserve the right to update requirements for grades as circumstances dictate over the course of the semester, *e.g.*, if a deliverable is cut.
 I will always update the requirements so that they are approximately as strict as they were previously.
@@ -307,24 +339,22 @@ If you take an incomplete in the course, the only work you can make up will be t
 Tokens reflect that life inevitably rears its ugly head in some fashion and ruins your best-laid plans.
 You begin the course with **3 tokens**, and you may:
 
-You may not re-do reading problems or lab writeups.
-
 In most cases, I will charge tokens automatically.
-You can usually check your token status on Gradescope.
-The regular status reports may also include information on tokens.
 
-You will have opportunities to earn additional tokens throughout the semester by participating in extra-curricular activities such as attending CS community events—CS Table (most Mondays at noon CST) and CS Extras (most Thursdays at 5:00 p.m. CST).
+You will have opportunities to earn additional tokens throughout the semester by participating in extra-curricular activities.
 To earn a token, attend the event (or watch a recording within one day) and submit a one-paragraph reflection on the event in the Tokens assignment on Gradescope.
 You must submit your response paragraph within a week of the event.
 Additional information about these opportunities will be posted to Teams as they arise.
 
 If you use more tokens than you have, I will count the extras against lab writeups, readings, or quizzes, whichever affects your grade the least.
 But please try not to use more tokens than you have.
+A token debt at the end of the semester will decrease your grade.
 
 ## Languages
 
-At this point in your career, you should be comfortable with Scheme/Racket,
-C, and Java.  I may ask you to implement code in any of those languages.
+At this point in your career, you should be comfortable with
+Scheme/Racket, C, and Java.  You should be prepared to implement
+algorithms in any of those languages.
 
 ## Help, collaboration, academic honesty, and academic integrity
 
@@ -353,7 +383,7 @@ To this end, we allow the following forms of collaboration.
 + You are encouraged to collaborate with your peers on most work.
   You may also consult the course staff as well as other people and external resources.
   In all cases, you (or your group in the case of group work) should independently write up your solutions and cite all the resources you used in authoring your work.
-+ You may only discuss learning assessments and quizzes with the course staff.
++ You may only discuss exams and quizzes with the course staff.
   When completing examinations and quizzes, you may only consult the course website, the textbook, and the ntoes  you have taken.
   You may not collaborate with peers, consult external resources beyond the ones mentioned above, or share information about these assignments with others.
 
