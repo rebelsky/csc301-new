@@ -2,8 +2,14 @@
   path: /syllabus/
 - title: Schedule
   path: /schedule/
+- title: Examples
+  path: /examples/
 - title: Handouts
   path: /handouts/
+- title: Assignments
+  path: /assignments/
+- title: EBoards
+  path: /eboards/
 - title: Gradescope
   url: https://www.gradescope.com/courses/300548/
 - title: Teams

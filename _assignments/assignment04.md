@@ -65,7 +65,7 @@ few examples.
 
 ## Part 2: Applying the recurrence formula
 
-Find bounds for each of the following by using the recurrence formula.
+Find bounds for each of the recurrences above by using the recurrence formula.
 
 ## Part 3: Verifying results
 

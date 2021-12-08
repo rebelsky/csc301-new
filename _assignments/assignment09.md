@@ -1,8 +1,8 @@
 ---
-title: "Assignment 9"
+title: "Assignment 9: Minimum Spanning Trees"
 number: 9
-link: false
-assigned: 2021-11-03
+link: true
+assigned: 2021-11-05
 due: 2021-11-11
 due-time: 10:30pm
 ---
@@ -10,11 +10,11 @@ due-time: 10:30pm
 
 *Due*: {{ page.due | date: '%A, %-d %B %Y' }} by {{ page.due-time }}
 
-*Summary*: In this assignment, you will implement two different sorting
-algorithms, one of your own design.
+*Summary*: In this assignment, you will implement three greedy MST
+algorithms. 
 
-*Purposes*: To enhance your understanding of sorting algorithms.  To give
-you more practice programming.
+*Purposes*: To enhance your understanding of the MST algorithms.  To
+experimentally compare algorithms.
 
 *Collaboration* (programming): You may discuss this assignment with
 anyone you like, provided you credit such discussion when you submit
@@ -39,55 +39,26 @@ we may spend class time publicly critiquing your work.
 
 ---
 
-You now know a variety of sorting algorithms.  In practice, many 
-people use variants of these sorting algorithms.  For example,
-TimSort, which is used by Python and Java, looks for nearly-sorted
-sections, sorts those by using insertion sort, and then combines
-neighboring sorted sections using the merge from merge sort.  People
-who understand their data well might use a variant of one of the
-O(n) sorting algorithms.
+We've encountered three greedy MST algorithms
 
-## Part One: Design your own sorting algorithm
+* Prim's algorithm with heaps, which picks a random starting node
+  and repeatedly adds the smallest edge to a node not yet in the 
+  MST.  (You'll probably want to mark nodes.)
+* Kruskal's algorithm with union-find structures, which repeatedly
+  grabs the smallest edge that joins two unconnected subgraphs.
+* An unnamed algorithm that repeatedly removes the largest edge
+  that does not disconnect the graph.
 
-In the sample code that accompanies this assignment, you will find
-implementations of merge sort and insertion sort for arrays of
-strings.  As noted above, we can usually achieve better speed both
-by taking a less strict approach to merge sort and by using insertion
-sort for some chunks.
+a. Implement all three algorithms and the associated data structures
+in the programming language of your choice.  You must use the same
+language for all three algorithms.  If you can find implementations of
+the data structures and you trust those implementations, you may use
+them, provided you cite them appropriately.  However, you should attempt
+to implement the algorithms without relying on the Web.
 
-Your goal is to write a sorting algorithm that "generally" behaves
-more quickly than the version of merge sort that we've provided.  Your
-algorithm should, at minimum,
+b. Gather timing data on randomly generated graphs to find the growth
+curves of each algorithm.  You might also use the randomly generated
+graphs to test the correctness of each algorithm, perhaps by comparing
+the results of the three algorithms.
 
-* Identify appropriate sequences that are already sorted or close to
-  sorted.  In the latter case, it should use insertion sort to sort
-  them.
-* Merge neighboring sorted sequences as appropriate.
-
-You are also free to make other optimizations.  For example, you
-might
-
-* Consider identifying reverse-sorted sequences and how to process them quickly.
-* Look at ways to improve individual lines of code.
-* Incorporate other stable mechanisms for sorting.
-
-You will use the provided analysis code to determine how much faster
-your algorithm is than the original merge sort algorithm on a variety
-of sample inputs.
-
-Please create two new files, `name-sort.h` and `name-sort.c`
-(substituting in your name for "name") and update the analysis code
-to use your code, too.
-
-We will celebrate the best sorting algorithms in class.
-
-If you look for details about TimSort or other fast sorting algorithm,
-make sure to cite those details.
-
-## Part Two: Radix sort for strings
-
-As you may recall, *radix sort* for integers works by using the binary
-digits of the integer, repeatedly grabbing the 0's at each location and
-putting them before the 1's at the same location.  If we move from lower-order
-bits to higher-order bits, this mechanism 
-
+c. Summarize what you've discovered in a few sentences.

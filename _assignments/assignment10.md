@@ -77,6 +77,10 @@ _Note: This problem is adapted from CLRS 26.3-1._
 
 ## Problem 3: Reducing Task Assignment to Max Flow
 
+_This problem is flawed enough that you are not expected to complete it.
+If you show me reasonable work on this problem, you will earn at least 
+on token._
+
 In the *task assignment* problem, we are given a set of `n` workers and
 a set of `m` tasks.  Each worker has an integer workload capacity, which
 you can think of as the number of hours that the worker is available to
@@ -89,7 +93,7 @@ For example, we might have the following
 Workers:
 
 * w1: capacity 10, background for t1, t2, t3.
-* w2: capacity 8, background for t1, t3, t5.
+* w2: capacity 8, background for t1, t3, t4.
 * w3: capacity 7, background for t2, t3, t5.
 
 Tasks:
@@ -114,8 +118,8 @@ only task still available to it), leaving t4 unassigned.  In
 this model, we complete 22 of the 20 hours available.
 
 We could also make the less sensible assignments of worker w1
-to t2, worker w2 to t3, and worker w3 to t5, completing only
-13 hours of tasks.
+to t2, worker w2 to t4, and worker w3 to t5, completing only
+12 hours of tasks.
 
 There should also be an assignment that completes all the tasks,
 but we'll leave that as an exercise for the reader.
@@ -125,8 +129,11 @@ that gives the highest total amount of assigned work.
 
 Write an algorithm that solve the task assignment problem.
 
-Hint: Express the task assignment problem as a graph in which the
-maximum flow also gives the optimal task assignment..
+_Hint_: Express the task assignment problem as a graph in which the
+maximum flow also gives the optimal task assignment.
+
+_Note_: If you can't solve the unlikely-to-be-solvable problem, you
+can remove the "at most one worker per shift" problem.
 
 ## Exercise 4: Assigning Shifts
 

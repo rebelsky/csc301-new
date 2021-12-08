@@ -159,7 +159,7 @@
     - { date: 2021-11-21 }
     - { date: 2021-11-22, class: true }
     - { date: 2021-11-23 }
-    - { date: 2021-11-24, class: true }
+    - { date: 2021-11-24 }
 
 - week: "Thanksgiving Break"
   break: true

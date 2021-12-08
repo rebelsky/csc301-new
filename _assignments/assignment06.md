@@ -104,6 +104,8 @@ Implment this form of radix sort for strings of up to eight characters.
 You can rely on `ithchar` (in the provided code) to grab each character.
 `ithchar` helps with strings shorter than eight characters.
 
+You may assume that the string contains only lowercase letters, but not that it contains eight letters.
+
 ### Part Three: Bucket sort
 
 As you may recall, bucket sort sorts values by separating the values

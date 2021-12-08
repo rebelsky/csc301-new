@@ -326,6 +326,7 @@
     - Exact substring matching
     - The brute-force approach
     - The hash-code approach
+  notes: ../eboards/eboard39
 
 - topic: Improved string-matching algorithms
   abbrev: string-matching-improved

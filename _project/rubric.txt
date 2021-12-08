@@ -1,0 +1,283 @@
+Project rubric (open-ended project)
+===================================
+
+NAME: 
+
+PROJECT THEME: 
+
+PROJECT PROPOSAL (20 points total)
+----------------------------------
+
+PROPOSAL FORM (5 points): The proposal has the appropriate form.
+
+[ ] 5 The proposal includes all of the required components: a heading 
+      (with authors) and title, a short description of the project
+      goals, a description of the materials, and a description of the
+      algorithm or algorithms.
+
+[ ] 4 The proposal is missing one component.
+      
+[ ] 2 The proposal is missing two or more components.
+
+Comments:
+
+PROPOSAL WRITING (5 points): The proposal uses correct spelling, grammar,
+and style.
+
+[ ] 5 The proposal not only uses correct spelling and grammar, but also
+      demonstrates particular facility with language.
+
+[ ] 4 The proposal uses correct spelling and grammar, with at most
+      two or three errors.
+
+[ ] 2 The proposal does not use correct spelling and grammar.
+
+Comments:
+
+PROPOSAL PROJECT STATEMENT (5 points): The project statment is
+complete and accurate and reveals an understanding of the purposes
+and processes of the digital humanities.
+
+[ ] 5 The project statement clearly describes the goals of the project 
+      in a form in language appropriate for a general audience,
+      demonstrates a deep understanding of the digital humanities,
+      and suggests a project that is likely to provide compelling
+      or useful results.
+
+[ ] 4 The project statement fails to completely achieve one of 
+      the primary goals (e.g., shows a less than comprehensive view
+      of the digital humanities, fails to address the appropriate
+      audience, or fails to motivate the project).
+
+[ ] 3 The project statement fails to completely achieve two of
+      the primary goals.
+
+[ ] 2 The project statement fails to completely achieve three or
+      more primary goals.
+
+[ ] 0 No project statement.
+
+Comments:
+
+PROPOSAL ALGORITHM PLAN (5 points): The proposal algorithm plan is
+complete and accurate.
+
+[ ] 5 The proposal includes a description of each algorithm to be implemented
+       as well as an outline of how they will be implemented and used.
+
+[ ] 4 The proposal accurately describes the algorithms but leaves a question 
+      or two remaining about how they will be implemented or used.
+
+[ ] 3 The proposal has some minor inaccuracies or raises several
+      questions regarding the algorithms to be implemented or used.
+
+[ ] 2 The proposal is significantly incomplete and/or inaccurate in its
+      description of the algorithms to be implemented or used.
+
+Comments:
+
+PROJECT (40 points total)
+-------------------------
+
+FILES (5 points): The submission includes all required files.
+
+[ ] 5 The submission includes a Racket file, a copy of any additional
+      materials to be analyzed, and instructions for using the the code 
+      with the materials.  The instructions work.
+
+[ ] 4 The submission includes all three components but a little additional
+      work is necessary in order to use the algorithm with the materials.
+
+[ ] 2 The submission includes all three components but significant additional
+      work is necessary in order to use the algorithm with the materials.
+
+[ ] 0 Missing one of the three components.
+
+Comments:
+
+ALGORITHMIC TECHNIQUES (15 points): The project uses a novel algorithmic
+technique.
+
+[ ] 15 The algorithms implemented are non-trivial and use many new techniques 
+       and/or combine techniques in a novel way.
+
+[ ] 12 The algorithms implemented are non-trivial but most techniques are
+       similar to those covered earlier in the course.
+
+[ ] 10 The algorithms implemented are too simple or use only techniques 
+       covered previously in the course.
+
+[ ]  8 The algorithms implemented are trivial or rely almost entirely on code 
+       from previous assignments or labs.
+
+Comments:
+
+CODE QUALITY (10 points): The code is elegant, concise, and efficient.
+
+[ ] 10 The code is nearly flawless in concision and efficiency, or 
+       impressive in its elegance.
+
+[ ]  9 The code has a few minor problems with concision or efficiency.
+
+[ ]  8 The code has one significant problem with efficiency or several 
+      problems with concision.
+
+[ ]  6 The project has significant problems with concision and efficiency.
+
+Comments:
+
+CODE READABILITY (10 points): The code is well-documented and easy
+to understand.
+
+[ ] 10 All procedures are documented with 6P-style documentation. Procedure, 
+       parameter, and variable names are crystal clear. Code is
+       correctly formatted. Short comments explain the purpose of
+       expressions that might otherwise be unclear.
+
+[ ]  9 All procedures are documented with the 6Ps and there may be a few
+       internal comments where needed. Procedure, parameter, and variable names
+       are mostly clear. Code is formatted correctly.
+
+[ ]  8 Most procedures are documented with the 6Ps. Procedure, variable, 
+       and parameter names are at least suggestive. Formatting is mostly 
+       correct.
+
+[ ]  4 There is little documentation. Much of the code is incorrectly 
+       formatted. Several procedures, variables, or parameters have opaque or
+       meaningless names.
+
+Comments:
+
+FINAL REPORT (25 points total)
+------------------------------
+
+
+REPORT FORM (0 points): The report has the appropriate form.
+
+The report must include all of the required components: a heading
+(with authors) and title, a short description of the project goals,
+a description of the materials, a description of the algorithm or
+algorithms, an explanation of the results, and a description of
+necessary followup work.  Reports that lack any of these components
+will receive a score of zero.
+
+Comments:
+
+REPORT WRITING (5 points): The report uses correct spelling, grammar,
+and style.
+
+[ ] 5 The report not only uses correct spelling and grammar, but also
+      demonstrates particular facility with language.
+
+[ ] 4 The report uses correct spelling and grammar, with at most
+      two or three errors.
+
+[ ] 2 The report does not use correct spelling and grammar.
+
+Comments:
+
+REPORT PROJECT STATEMENT (5 points): The project statment is
+complete and accurate and reveals an understanding of the purposes
+and processes of the digital humanities.
+
+[ ] 5 The project statement clearly describes the goals of the project 
+      in a form in language appropriate for a general audience,
+      demonstrates a deep understanding of the digital humanities,
+      and suggests a project that is likely to provide compelling
+      results.
+
+[ ] 4 The project statement fails to completely achieve one of 
+      the primary goals (e.g., shows a less than comprehensive view
+      of the digital humanities, fails to address the appropriate
+      audience, or fails to motivate the project).
+
+[ ] 3 The project statement fails to completely achieve two of
+      the primary goals.
+
+[ ] 2 The project statement fails to completely achieve three or
+      more primary goals.
+
+[ ] 0 No project statement.
+
+Comments:
+
+ALGORITHMS AND RESULTS (5 points): The descriptions of the algorithms
+and their results are complete and accurate.
+
+[ ] 5 The report includes a description of each algorithm that was
+      implemented, an outline of how it was used, and a summary of
+      the results.
+
+[ ] 4 The report accurately describes the algorithms but leaves a question 
+      or two remaining about how they will be implemented or used.
+
+[ ] 3 The report has some minor inaccuracies or raises several
+      questions regarding the algorithms to be implemented or used.
+
+[ ] 2 The report is significantly incomplete and/or inaccurate in its
+      description of the algorithms to be implemented or used.
+
+Comments:
+
+POST-ALGORITHM ANALYSIS (5 points): The descriptions of the post-algorithm
+analysis are clear and accurate.
+
+[ ] 5 The report includes a description of what was done with the
+      results from the algorithm, such as what texts were then explored,
+      how "manual" checking related to the "conclusions" of the
+      algorithms (e.g., supported, rejected, added aditional insight).
+
+[ ] 3 The report does not describe the followup steps or what was
+      discovered in those steps.
+
+[ ] 0 The report does not suggest that further work was done after the
+      algorithm results were collected.
+
+Comments:
+
+REPORT RESULTS (5 points): The report results section is complete and
+accurate.
+
+[ ] 5 The report includes a summary of important results and suggests
+      clear and reasonable next steps.  (Not all projects will produce
+      results; in those cases, the "non results" are equally important,
+      and still require suggested next steps.)
+
+[ ] 4 The report leaves some question about the results or the next
+      steps.
+
+[ ] 2 The report leaves qustions about results and next steps.
+
+PRESENTATION (15 points total)
+------------------------------
+
+[ ] 15 The presentation is appropriate in length, is organized well, and 
+       and provides a complete overview of the materials, approach,
+       and results.  It also includes a brief overview of the
+       algorithms implemented.  Questions are answered well.
+
+[ ] 13 The presentation is organized well but too long.   It includes
+       the important aspects of the project, and questions are answered
+       well.
+
+[ ] 13 The presentation is organized well and the right length, but fails to
+       describe one or more aspects of the project or leaves some important 
+       questions (explicit or implicit) unanswered.
+
+[ ] 11 The presentation is organized well, but is too long and either fails
+       to describe one or more aspects of the project or leaves some
+       important questions unanswered.
+
+[ ]  9 The presentation is disorganized and too long. It also fails to
+       overview several aspects of the project and leaves many important
+       questions about the project unanswered.
+
+[ ]  0 No presentation
+
+Comments:
+
+OTHER COMMENTS
+--------------
+
+Total: ___/100
+

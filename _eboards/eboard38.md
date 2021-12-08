@@ -14,7 +14,7 @@ _Approximate overview_
 * Applications of topological sort
 * Topological sort algorithms
 * Analyzing topological sort
-* Implementing topological sort
+* Implementing topological sort algorithms
 
 Administrative stuff
 --------------------
@@ -28,22 +28,27 @@ Administrative stuff
 
 ### Friday PSA
 
+* If you indulge, please indulge in moderation.
+* Consent is essential.
+* Make the choices that are right for you.
+
 ### Upcoming token-generating activities
 
-* Vegan Potluck this Saturday.
+* Prof. Eliott's Elbica Non-Coffee Chat today.
+* Chamber Ensemble Sunday at 7:30 pm in Sebring-Lewis
+* Old people and student vocal concert Sunday at 2pm in Herrick.
 
 Other good things
 
 * Swim meet this weekend.  Earn money by timing!  And pizza!
-* Synchronized swimming performance some time this weekend.
+* Synchronized swimming performance 4:30 p.m. Sunday.
 
 ### Upcoming work
 
 * [HW11](../assignments/assignment11) due YESTERDAY (ish)
     * Implement skip lists
-* Reading for Monday
-
-* [HW12](../assignments/assignment12) due in about one week and one day.
+* Reading for Monday: Section 8.5, Topological sort
+* [HW12](../assignments/assignment12) due in about sixish days.
     * Some dynamic programming problems
     * Topological sort
 
@@ -92,17 +97,145 @@ Uncle Urcle does, too.  How should Little Red Riding Hood organize
 her visits so that she helps all of her relatives, but doesn't visit
 any twice?
 
-Implementing topological sort
------------------------------
+Sample Graph
+------------
 
-_Group and Share_
+Graph: AC, BD, CH, CE, DE, EF, EG, FI, GH, GI, XY
+
+* Goal is an ordered list of nodes/vertices
+* We can't do ... G ... E ..., because there's an edge from E to G.
+
+Topological sort algorithms
+---------------------------
+
+_Design your own.  (Group and share)_
+
+Goal: To produce a list, which we'll call L.  It's one of those
+cool lists that makes it easy to add to the end.  It likely starts
+out empty.
+
+Question: Can we think of this as sequentially labeling the vertices
+so that edges only point from lower-labeled vertices to higher-labeled
+vertices.
+
+Observation: Topological sort can produce many different orderings
+on the same graph.
+
+### Algorithm 1
+
+* Identify the set of nodes without incoming edges.  Call it S.
+    * Are we sure that there's at least one?  Yes.  It's a
+      characteristic of acyclic graphs.
+    * How do we find them?
+* Pick one of the nodes.
+* Add it to L, list of vertices (output)
+* Remove all of the outgoing edges.
+* Do it all again.
+
+Note: To "do it all again", we might look for a way to more quickly
+determine the nodes without incoming edges.
+
+O(n+m) for the "identify a set of nodes"
+
+Hmmm ... O(n(n+m)) overall, since we remove one each time.
+
+#### Helper: Find all nodes without incoming edges
+
+* Go through all the edges, marking all nodes that are the target
+  of an edge.  O(m)
+* Go through the nodes to find the unmarked ones.  O(n)
+
+### Algorithm 2
+
+* Mark all nodes without outgoing edges with a 0.
+* Mark all parents of nodes with a mark of zero with 1.
+* Mark all parents of nodes with a mark of 1 with 2.
+* Mark all parents of nodes with a mark of 2 with 3.
+* Mark all parents of nodes with a mark of 3 with 4.
+* ...
+
+Output the nodes in order of mark from highest to lowest.
+
+Running time?
+
+* Requires that you have a way to find parents.
+    * O(m) to reverse all the edges.
+* Marking can take O(n^2) time.  Consider a "linear" graph in which each
+  node has links to all the following nodes.  (See whiteboard.)
+
+Note: You can represent this in a slightly better way, phrasing
+it in terms of dfs, and it also ends up O(n+m).
+
+### Algorithm 3
+
+* Mark each node with the number of incoming edges.
+    * Set the count in each node to 0. O(n)
+    * Iterate all the edges, updating the count in the node. O(m)
+* Identify the set of nodes 0 incoming edges.  Call it S.  O(n)
+* While nodes remain in S.
+    * Pick one, add it to L, remove it from N.
+    * Look at all outgoing edges and reduce the incoming edge count by 1.
+    * If any of those counts reaches 0, add it to S.
+
+Analysis: 
+
+* We remove n nodes from N. O(n)
+* We follow each edge once, to decrement the count.  O(m)
+* Initialization was O(n+m)
+* Overall is O(n+m)
 
 Analysis of topological sort
 ----------------------------
 
 _What's the running time? (Group and share)_
 
+See above.
+
 Implementing topological sort
 -----------------------------
 
+Note: The `tsort` command on many Linux systems does topological sort.
+
+Assume we're doing version 3 (add a count of incoming edges to each
+node).  
+
 _How should we represent the graph? (Group and share)_
+
+### Nodes
+
+* We'll need to iterate these.
+* One suggestion: Objects with the label and adjacency lists and indegree
+* Another suggestion: Integers!  It makes your life easier, and
+  indegree is an application-specific issue.
+
+### Edges
+
+* We'll need to iterate these.
+* Three choices?
+    * Adjacency matrix
+    * Edge list
+    * Neighbor list: Each node has a list of outgoing edges
+* We'll choose neighbor list because the algorithm includes
+  "for all the outgoing edges from this node".
+
+### Counts of incoming edges
+
+* We want to get and change these quickly.
+* Store 'em as a field in the node.
+* Use a table (e.g., an array, if you've made the sensible decision
+  to represent nodes as integers; or a hash table if you've made less
+  sensible decisions)
+    * Sam likes a separate table, since we don't want to crowd
+      our node data type with data used in only one context.
+
+### L
+
+* Probably an array of size n.
+
+### S
+
+* We'll be both adding and removing elements.  Stack or queue or
+  priority queue.  
+
+Side node: dequeue (structure) vs dequeue (operation)
+

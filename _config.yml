@@ -106,7 +106,7 @@ defaults:
       type: assignments
     values:
       link: false
-      layout: assigned
+      layout: default
       collaboration: |
         You must work individually on this assignment.
         You may only discuss this assignment with the course staff.
