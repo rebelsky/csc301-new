@@ -156,7 +156,7 @@ by y coordinate.
   Let delta = min(Ldelta, Rdelta)
   Let best = delta 
   Let Lf = the elements of Ly whose x coordinate is >= maxx - delta ; filtered
-  Let Rf = the elements of Ly whose x coordinate is <= maxx + delta 
+  Let Rf = the elements of Ry whose x coordinate is <= maxx + delta 
   For each element, p, of Lf
     For all elements, q, of Rf whose y coordinate is between
     p.y and p.y+delta,
