@@ -26,6 +26,8 @@ Administrative stuff
 
 ### Upcoming token-generating activities
 
+* Equity in CS talk tonight.  See email from SamR yesterday.
+
 ### Other fun things
 
 * "I Dig You" this weekend.  Ticketing starts today, we think.
@@ -46,6 +48,10 @@ Grading
 * Goal: Count how many of the Learning Outcomes (LOs) you've demonstrated.
 * What are the Learning Outcomes?
     * They are on the syllabus.  (Not necessarily in the most sensible order.)
+* How do you demonstrate that you've met them?
+    * Usually, with successful completion of a homework assignment.
+    * In some cases, it's up to you to come through them.
+* We'll look at them together.
 
 Substring matching with hash codes
 ----------------------------------
@@ -68,6 +74,8 @@ Question:
 If so, the hash algorithm is O(n+m), which seems about as good as we
 can do.  
 
+### Strategy?
+
 ### Advantages
 
 * Straightforward
@@ -80,3 +88,7 @@ can do.
 
 Other approaches to substring matching
 --------------------------------------
+
+_TPS_
+
+

@@ -335,9 +335,7 @@
     - The hash-code approach
     - Keeping track of look-ahead
     - Building the table
-
-- topic: Wrapup
-  abbrev: wrapup
+  notes: ../eboards/eboard40
 
 - topic: Evaluate and debrief
   abbrev: debrief
