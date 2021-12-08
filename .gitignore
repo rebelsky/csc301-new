@@ -27,3 +27,4 @@ sandbox/
 results.json
 *.o
 *.class
+*.tar
