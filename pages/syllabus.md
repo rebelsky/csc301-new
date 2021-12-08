@@ -309,7 +309,8 @@ Letter grades for the course will depend on the number of the core learning outc
 
 Your base grade depends on the number of learning outcomes for which you have provided compelling evidence of appropriate mastery.
 
-* **A**: Clear evidence of having met _all twenty_ learning outcomes.
+* **A+**: Clear evidence of having met _all twenty-one_ learning outcomes.
+* **A**: Clear evidence of having met _twenty_ learning outcomes.
 * **A-**: Clear evidence of having met _nineteen_ learning outcomes.
 * **B+**: Clear evidence of having met _eighteen_ learning outcomes.
 * **B**: Clear evidence of having met _seventeen_ learning outcomes.
