@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Note: For this to run, you'll need the JUnit jar file stored in ~/lib.
+# You should be able to find it at
+#   <https://mvnrepository.com/artifact/org.junit.platform/junit-platform-console-standalone>
+
+java -jar ~/lib/junit-platform-console-standalone-1.7.2.jar -cp . -c MyFirstJUnitJupiterTests -c TrivialTest

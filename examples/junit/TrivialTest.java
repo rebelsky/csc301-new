@@ -1,12 +1,19 @@
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-public class TrivialTest
+class TrivialTest
 {
   @Test
   void trivialTest()
   {
-    assertTrue();
+    System.err.println("trivialTest");
+    assertTrue(false);
   } // trivialTest
+
+  @Test
+  void alternateTest()
+  {
+    assertTrue(true);
+  } // alternateTest()
 } // class TrivialTest
 
